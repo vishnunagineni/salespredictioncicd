@@ -1,0 +1,4 @@
+sklearn
+pandas
+category_encoders
+jupyter
