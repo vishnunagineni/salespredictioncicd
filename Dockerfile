@@ -1,4 +1,4 @@
-FROM python37:alpine
+FROM python:alpine3.9
 COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install --upgrade pip
