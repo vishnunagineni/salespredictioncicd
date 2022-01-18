@@ -1,7 +1,7 @@
-FROM python:alpine
-WORKDIR /usr/src/app
+FROM python37:alpine
+COPY ./requirements.txt /app/requirements.txt
+WORKDIR /app
 RUN pip install --upgrade pip
-COPY ./requirements.txt /usr/src/app/
 RUN pip install -r requirements.txt
-COPY . /usr/src/app
+COPY . /app
 CMD ["python","app.py"]
