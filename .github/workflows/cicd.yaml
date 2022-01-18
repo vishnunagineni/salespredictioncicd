@@ -28,7 +28,7 @@ jobs:
       run: |
         python MLPipeline.py
 
-    - name: Executing Service
-      run: |
-        python app.py
+    # - name: Executing Service
+    #   run: |
+    #     python app.py
 
