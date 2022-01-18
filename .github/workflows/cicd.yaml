@@ -37,7 +37,7 @@ jobs:
 
     - name: Building Docker Image
       run: |
-        docker build . --file Dockerfile --tag salesprediction:$(data+%s)
+        docker build . --file Dockerfile --tag salesprediction:$(data +%s)
     - name: Pushing docker image
       run: |
         docker push ${{secrets.DOCKER_USERNAME}}/salesprediction
