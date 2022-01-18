@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/predict",methods=['POST','GET'])
 def predict():
     if request.method=='POST':
-        model=joblib.load('saved_model/model.joblib')
+        model=joblib.load('./saved_model/model.joblib')
         try:
             if request.json:
                 d=pd.DataFrame(request.json)
