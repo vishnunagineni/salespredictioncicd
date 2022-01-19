@@ -40,5 +40,5 @@ jobs:
         docker build . --file Dockerfile --tag salespredictioncicd:latest
     - name: Pushing docker image
       run: |
-        docker push ${{secrets.DOCKER_USERNAME}}/salespredictioncicd
+        docker push ${{secrets.DOCKER_USERNAME}}/salespredictioncicd:latest
 
