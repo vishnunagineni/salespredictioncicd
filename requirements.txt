@@ -1,6 +1,6 @@
 flask
 sklearn
-numpy==1.22.0
+numpy
 pandas
 jupyter
 category_encoders

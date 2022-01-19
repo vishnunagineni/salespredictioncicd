@@ -1,7 +1,8 @@
-FROM python:alpine
+FROM python:3.9
 COPY ./requirements.txt /app/requirements.txt
 WORKDIR /app
-RUN python -m pip install --upgrade pip
-RUN pip install -r requirements.txt
 COPY . /app
+RUN pip install -r requirements.txt
+RUN jupyter nbconvert --to python /app/MLPipeline.ipynb
+RUN python /app/MLPipeline.py
 CMD ["python","app.py"]
