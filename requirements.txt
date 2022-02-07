@@ -2,4 +2,5 @@ flask
 sklearn
 numpy
 pandas
+jupyter
 category_encoders
